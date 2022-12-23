@@ -1,6 +1,6 @@
 import requests
 
-api_token = your token
+api_token = #your_token
 url = "https://openai35.p.rapidapi.com/createImage"
 
 
