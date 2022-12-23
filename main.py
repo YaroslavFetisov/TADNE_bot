@@ -14,7 +14,7 @@ async def start_command(message: types.Message):
 @dp.message_handler(commands=["go"])
 async def pic(req: types.Message):
     try:
-        await req.reply_photo(get_pic(req.text))
+        await req.reply_photo(get_pic(req.text[3:]))
         await req.reply("Ви тільки що витратили 35 коп з рахунку його величності Ярослава. Ваша душа тепер належить йому")
     except:
         await req.reply("Ідеш нахуй по причині: \"Кончений долбойоб\"")
